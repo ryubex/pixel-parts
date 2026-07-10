@@ -1,6 +1,7 @@
 .navBar {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 
     padding: 20px 35px;
@@ -20,10 +21,42 @@
     color: #94A3BB;
 }
 
+.navBar-right {
+    display: flex;
+    align-items: center;
+}
+
 .navBar-right ul {
     display: flex;
     flex-direction: row;
     list-style: none;
     align-items: center;
     gap: 40px;
+}
+
+li {
+    display: list-item;
+    unicode-bidi: isolate;
+}
+
+.nav-link {
+    display: flex;
+    gap: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease;
+
+    padding: 12px 18px;
+    border-radius: 6px;
+}
+
+.nav-link:hover {
+  background: white;
+  color: black;
+}
+
+.nav-link.active {
+  background: white;
+  color: black;
 }

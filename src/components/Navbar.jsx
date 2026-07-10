@@ -1,4 +1,8 @@
 import { AiOutlineHome } from "react-icons/ai";
+import { BsBoxSeam } from "react-icons/bs";
+import { FiShoppingCart } from "react-icons/fi";
+import { GoPerson } from "react-icons/go";
+
 import '../styles/Navbar.css'
 
 export default function Navbar() {
@@ -12,21 +16,31 @@ export default function Navbar() {
             <div className="navBar-right">
                 <ul>
                     <li>
-                        <a href="" className='nav-link'></a>
-                        <AiOutlineHome />
-                        Home
+                        <a href="" className='nav-link'>
+                            <AiOutlineHome />
+                            Home
+                        </a>
                     </li>
 
                     <li>
-                        Products
+                        <a href="" className="nav-link">
+                            <BsBoxSeam />
+                            Products
+                        </a>
                     </li>
 
                     <li>
-                        Cart
+                        <a href="" className="nav-link">
+                            <FiShoppingCart />
+                            Cart
+                        </a>
                     </li>
 
                     <li>
-                        Login
+                        <a href="" className="nav-link">
+                            <GoPerson />
+                            Login
+                        </a> 
                     </li>
                 </ul>
             </div>
