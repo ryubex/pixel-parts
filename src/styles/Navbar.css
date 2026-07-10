@@ -1,0 +1,29 @@
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 20px 35px;
+    background: #1E2326;
+}
+
+.navBar-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.pixel {
+    color: #3B82F6;
+}
+
+.parts {
+    color: #94A3BB;
+}
+
+.navBar-right ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+}
