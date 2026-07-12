@@ -3,44 +3,45 @@ import { BsBoxSeam } from "react-icons/bs";
 import { FiShoppingCart } from "react-icons/fi";
 import { GoPerson } from "react-icons/go";
 
+import { Link } from "react-router-dom";
 import '../styles/Navbar.css'
 
 export default function Navbar() {
     return (
         <nav className="navBar">
             <div className="navBar-left">
-                <h2 className='pixel'>Pixel</h2>
-                <h2 className='parts'>Parts</h2>
+                <h1 className='pixel'>Pixel</h1>
+                <h1 className='parts'>Parts</h1>
             </div>
 
             <div className="navBar-right">
                 <ul>
                     <li>
-                        <a href="" className='nav-link'>
+                        <Link to="/" className='nav-link'>
                             <AiOutlineHome />
                             Home
-                        </a>
+                        </Link>
                     </li>
 
                     <li>
-                        <a href="" className="nav-link">
+                        <Link to="/shop" className="nav-link">
                             <BsBoxSeam />
                             Products
-                        </a>
+                        </Link>
                     </li>
 
                     <li>
-                        <a href="" className="nav-link">
+                        <Link to="/cart" className="nav-link">
                             <FiShoppingCart />
                             Cart
-                        </a>
+                        </Link>
                     </li>
 
                     <li>
-                        <a href="" className="nav-link">
+                        <Link to="/login" className="nav-link">
                             <GoPerson />
                             Login
-                        </a> 
+                        </Link> 
                     </li>
                 </ul>
             </div>

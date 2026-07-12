@@ -8,4 +8,4 @@ const Shop = () => {
   );
 };
 
-export default Popeye;
+export default Shop;
