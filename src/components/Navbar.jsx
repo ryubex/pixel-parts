@@ -3,7 +3,7 @@ import { BsBoxSeam } from "react-icons/bs";
 import { FiShoppingCart } from "react-icons/fi";
 import { GoPerson } from "react-icons/go";
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import '../styles/Navbar.css'
 
 export default function Navbar() {
@@ -17,31 +17,52 @@ export default function Navbar() {
             <div className="navBar-right">
                 <ul>
                     <li>
-                        <Link to="/" className='nav-link'>
-                            <AiOutlineHome />
-                            Home
-                        </Link>
+                        <NavLink 
+                            to="/"
+                            end 
+                            className={({ isActive }) =>
+                            isActive ? "nav-link active" : "nav-link"
+                            }
+                        >
+                                <AiOutlineHome />
+                                Home
+                        </NavLink>
                     </li>
 
                     <li>
-                        <Link to="/shop" className="nav-link">
+                        <NavLink 
+                            to="/shop" 
+                            className={({ isActive }) =>
+                                isActive ? "nav-link active" : "nav-link"
+                            }
+                        >
                             <BsBoxSeam />
                             Products
-                        </Link>
+                        </NavLink>
                     </li>
 
                     <li>
-                        <Link to="/cart" className="nav-link">
+                        <NavLink 
+                            to="/cart" 
+                            className={({ isActive }) =>
+                                isActive ? "nav-link active" : "nav-link"
+                            }
+                        >
                             <FiShoppingCart />
                             Cart
-                        </Link>
+                        </NavLink>
                     </li>
 
                     <li>
-                        <Link to="/login" className="nav-link">
+                        <NavLink 
+                            to="/login" 
+                            className={({ isActive }) =>
+                                isActive ? "nav-link active" : "nav-link"
+                            }
+                        >
                             <GoPerson />
                             Login
-                        </Link> 
+                        </NavLink> 
                     </li>
                 </ul>
             </div>
