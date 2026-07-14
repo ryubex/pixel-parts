@@ -34,6 +34,7 @@
     background-color: transparent;
     border: 1px solid #686e75;
     border-radius: 6px;
+    color: white;
 }
 
 .signin-password {
@@ -48,6 +49,7 @@
     background-color: transparent;
     border: 1px solid #686e75;
     border-radius: 6px;
+    color: white
 }
 
 .signin-btn {
@@ -60,4 +62,61 @@
     border-radius: 6px;
     border-color: transparent;
     background-color: #238636;
+}
+
+.webInput-login {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    justify-content: center;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    border-bottom: 1px solid #686e75;
+}
+
+.divider span {
+    padding: 0 16px;
+    white-space: nowrap;
+}
+
+.webLogin-btn {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+.webLogin-btn ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 8px;
+    width: 100%;
+}
+
+.webLogin-btn a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    width: 100%;
+    background-color: #212830;
+    border-color: #3d444d;
+    gap: 8px;
+    height: 40px;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
 }

@@ -1,3 +1,6 @@
+import { FcGoogle } from "react-icons/fc";
+import { FaGithub } from "react-icons/fa";
+
 import '../styles/Login.css'
 
 import { Link } from "react-router";
@@ -34,12 +37,28 @@ const Login = () => {
           </form>
 
           <div className='webInput-login'>
+            <div className='divider'>
+              <span>or</span>
+            </div>
 
+            <div className="webLogin-btn">
+              <ul>
+                <li>
+                  <a href="" /* put google sign in link here*/>
+                    <FcGoogle />
+                    Google
+                  </a>
+                </li>
+
+                <li>
+                  <a href="" /* put github sign in link here*/>
+                    <FaGithub />
+                    GitHub
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-
-        <div className='signin-footer'>
-          <p>This is the footer</p>
         </div>
       </div>
     </>
