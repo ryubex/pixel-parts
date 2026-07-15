@@ -1,0 +1,67 @@
+.mainContent {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.heroCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 35px rgba(59,130,246,.08);
+
+    background: linear-gradient(180deg,
+    #23282e 0%,
+    #1b2026 50%,
+    #14181d 100%);
+
+    margin-bottom: 48px;
+    padding: 64px 32px;
+    
+}
+
+.heroCard::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+
+    /* Tiny dots */
+    background-image:
+        radial-gradient(rgba(255,255,255,.025) 1px, transparent 1px);
+
+    background-size: 5px 5px;
+    opacity: .35;
+}
+
+.heroCard h1 {
+    letter-spacing: -2.2px;
+    margin-bottom: 16px;
+    font-size: 44px;
+    font-weight: 800;
+}
+
+.heroCard p {
+    max-width: 600px;
+    margin: 0 32px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.home-to-shop-btn {
+    background-color: white;
+    color: #14181d;
+    border-radius: 8px;
+    padding: 14px 36px;
+    font-size: 18px;
+    font-weight: 700;
+}

@@ -8,6 +8,8 @@ import Shop from "./pages/Shop";
 import Cart from "./pages/Cart";
 import Login from "./pages/Login";
 
+import './index.css'
+
 const router = createBrowserRouter([
   {
     path: "/",
