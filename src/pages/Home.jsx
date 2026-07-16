@@ -21,7 +21,7 @@ const Home = () => {
           <h2>Why shop with PixelParts?</h2>
 
           <div className='supportCard'>
-            <div className='fastCard'>
+            <div className='descCard'>
               <div className='cardIcon'>
                 ⚡
               </div>
@@ -31,7 +31,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className='genuinineCard'>
+            <div className='descCard'>
               <div className='cardIcon'>
                 ✅
               </div>
@@ -41,7 +41,7 @@ const Home = () => {
               </p>
             </div>
               
-            <div className='expertCard'>
+            <div className='descCard'>
               <div className='cardIcon'>
                 🛠️
               </div>
