@@ -17,6 +17,41 @@ const Home = () => {
             Browse Shop
           </a>
         </section>
+        <section className='hero-subCard'>
+          <h2>Why shop with PixelParts?</h2>
+
+          <div className='supportCard'>
+            <div className='fastCard'>
+              <div className='cardIcon'>
+                ⚡
+              </div>
+              <h3>Fast Delivery</h3>
+              <p>Get your components delivered quickly so you can start building
+                and gaming sooner.
+              </p>
+            </div>
+
+            <div className='genuinineCard'>
+              <div className='cardIcon'>
+                ✅
+              </div>
+              <h3>Genuine Components</h3>
+              <p>We stock authentic PC parts from trusted brands to ensure
+                quality and reliability
+              </p>
+            </div>
+              
+            <div className='expertCard'>
+              <div className='cardIcon'>
+                🛠️
+              </div>
+              <h3>Expert Support</h3>
+              <p>Need help choosing parts? Our team is hear to help you
+                build your dream PC
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );

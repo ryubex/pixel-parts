@@ -65,3 +65,31 @@
     font-size: 18px;
     font-weight: 700;
 }
+
+.hero-subCard {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.hero-subCard h2 {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.supportCard {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.supportCard h3 {
+    margin-bottom: 8px;
+}
+
+.hero-subCard p {
+    max-width: 300px;
+}
