@@ -51,6 +51,20 @@ const CartProvider = ({children}) => {
         )
     }
 
+    function updateQuantity(id, quantity){
+        const newQuantity = Math.max(1, Number(quantity) || 1)
+        setCart((prevCart) =>
+            prevCart.map((item) =>
+                item.id === id
+                    ?{
+                        ...item,
+                        quantity: newQuantity
+                    }
+                : item
+            )
+        )
+    }
+
 
     return (
         <CartContext.Provider 
@@ -58,7 +72,8 @@ const CartProvider = ({children}) => {
                 cart, 
                 addToCart,
                 increaseQuantity,
-                decreaseQuantity
+                decreaseQuantity,
+                updateQuantity
             }}
             >
             {children}
