@@ -1,17 +1,23 @@
+import { useContext } from 'react';
 import '../styles/ProductCard.css'
+import { CartContext } from '../context/Cart.Context';
 
 const ProductCard = ({ product }) => {
-  return (
-    <div className="product-card">
-      <img src={product.image} alt={product.title} />
+    const {addToCart} = useContext(CartContext)
 
-      <h3>{product.title}</h3>
+    return (
+        <div className="product-card">
 
-      <p>${product.price}</p>
+        <img src={product.image} alt={product.title} />
 
-      <button>Add to Cart</button>
-    </div>
-  );
-};
+        <h3>{product.title}</h3>
 
-export default ProductCard;
+        <p>${product.price}</p>
+
+        <button onClick={() => addToCart(product)}>
+            Add to Cart</button>
+        </div>
+    );
+    };
+
+export default ProductCard
