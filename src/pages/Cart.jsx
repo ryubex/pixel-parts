@@ -49,6 +49,7 @@ const Cart = () => {
               onChange={(e) => updateQuantity(item.id, e.target.value)} 
             />
 
+            
             <button onClick={() => decreaseQuantity(item.id)}>
               -
             </button>
@@ -61,8 +62,7 @@ const Cart = () => {
       
 
       <h2>Total: ${total.toFixed(2)}</h2>
-
-          <button>Checkout</button>
+          <button className="checkout-btn">Checkout</button>
     </div>
   );
 };
