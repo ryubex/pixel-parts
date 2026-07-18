@@ -8,6 +8,7 @@ import Shop from "./pages/Shop";
 import Cart from "./pages/Cart";
 import Login from "./pages/Login";
 import CartProvider from './context/Cart.Context.jsx';
+import { AuthProvider } from './context/AuthContext.jsx';
 
 import './index.css'
 
@@ -42,8 +43,10 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <CartProvider>
-      <RouterProvider router={router} />
-    </CartProvider>
+    <AuthProvider>
+      <CartProvider>
+          <RouterProvider router={router} />
+      </CartProvider>
+    </AuthProvider>
   </StrictMode>
 )
