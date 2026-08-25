@@ -13,9 +13,9 @@ const Home = () => {
           <p>Discover premium PC components, gaming peripherals, and reliable hardware,
             carefully selected to help you build, upgrade, and perform at your best.</p>
 
-          <a className='home-to-shop-btn' href="/shop">
+          <Link className='home-to-shop-btn' href="/shop">
             Browse Shop
-          </a>
+          </Link>
         </section>
         <section className='hero-subCard'>
           <h2>Why shop with PixelParts?</h2>
